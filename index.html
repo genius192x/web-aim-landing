@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230307001359" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230307001359">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230307114905" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230307114905">
 
 	<link rel="icon" href="../blue_flower.ico" type="image/x-icon">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -54,7 +54,7 @@
 						<a href="" class="banner__button main__button">Бесплатная консультация</a>
 					</div>
 					<picture class="banner__background">
-						<source srcset="img/LOGO-MOBILE.svg" media="(max-widtd: 800px)" />
+						<source srcset="img/LOGO-MOBILE.svg" media="(max-width: 800px)" />
 						<img src="img/LOGO.png" alt="WEB-AiM" />
 					</picture>
 					<div class="banner__arrow">
@@ -483,6 +483,14 @@
 									</td>
 								</tr>
 							</thead>
+							<tfoot>
+								<tr>
+									<th>&nbsp;</th>
+									<td><a class="table__link" href="#">Хочу</a></td>
+									<td><a class="table__link" href="#">Хочу</a></td>
+									<td><a class="table__link" href="#">Хочу</a></td>
+								</tr>
+							</tfoot>
 							<tbody>
 								<tr>
 									<td class="table__title title__bold">
@@ -700,7 +708,7 @@
 						</table>
 					</div>
 					<div class="prices__wrapper-mobile">
-						<p>Интернет магазин на шаблоне</p>
+						<p class="table__subtitle">Интернет магазин на шаблоне</p>
 						<table class="table">
 							<thead>
 								<tr>
@@ -721,6 +729,13 @@
 									</td>
 								</tr>
 							</thead>
+							<tfoot>
+								<tr>
+									<td><a class="table__link" href="#">Хочу</a></td>
+									<td><a class="table__link" href="#">Хочу</a></td>
+									<td><a class="table__link" href="#">Хочу</a></td>
+								</tr>
+							</tfoot>
 							<tbody>
 								<tr>
 									<td colspan="3">
@@ -983,7 +998,104 @@
 									<td><img src="img/check-square.svg" alt=""></td>
 								</tr>
 							</tbody>
+
 						</table>
+					</div>
+				</div>
+				<div class="page__examples">
+					<div class="examples__title section__title">Примеры работ</div>
+					<div class="examples__slider swiper-examples">
+						<div class="examples__wrapper swiper-wrapper">
+							<div class="examples__slide swiper-slide">
+								<div class="slide__title"><span>Лионрум</span>
+									— сеть магазинов мебели</div>
+								<div class="slide__tariff">(Тариф Расширенный)</div>
+								<div class="examples__content">
+									<div class="examples__text">
+										<div class="examples__list-title">В рамках проекта было реализовано:</div>
+										<ul class="examples__list">
+											<li class="slide__list-item">Двусторонняя интеграция с МойСклад;</li>
+											<li class="slide__list-item">Редизайн;</li>
+											<li class="slide__list-item">Автоматический расчет стоимости доставки в зависимости от наличия на определенном складе;</li>
+											<li class="slide__list-item">Не типовая механика расчета и вывода персональных скидок.</li>
+										</ul>
+										<p class="slide__description">
+											Не ломая штатную логику решения «Аспро: Максимум», мы реализовали все требования заказчика к новому сайту. Это сохранило модульность решения и позволило сделать все задачи по кастомизации данного решения.
+											После запуска мы продолжили сотрудничество с компанией МебеЛион в формате услуги техподдержки и развития ИМ.
+										</p>
+									</div>
+									<div class="examples__image">
+										<img src="img/examples/example_1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="examples__slide swiper-slide">
+								<div class="slide__title"><span>Bakinity.biz</span>
+									— магазин компьютеров и IT оборудования</div>
+								<div class="slide__tariff">(Тариф Стандартный)</div>
+								<div class="examples__content">
+									<div class="examples__text">
+										<div class="examples__list-title">В рамках проекта было реализовано:</div>
+										<ul class="examples__list">
+											<li class="slide__list-item">Онлайн оплата товаров или услуг;</li>
+											<li class="slide__list-item">Возможность отображать подборки товаров с характеристиками на главной странице (новинки, акции, хиты продаж);</li>
+											<li class="slide__list-item">Возможность отображать товар дня с характеристиками на главной странице;</li>
+											<li class="slide__list-item">Карта с зонированием по стоимости доставки;</li>
+											<li class="slide__list-item">Баннер на главной странице с товаром, который можно положить в корзину, не переходя в карточку товара.</li>
+										</ul>
+									</div>
+									<div class="examples__image">
+										<img src="img/examples/example_2.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="examples__slide swiper-slide">
+								<div class="slide__title"><span>IronHorse</span>
+									— прямой поставщик автомобильных аксессуаров </div>
+								<div class="slide__tariff">(Тариф Базовый)</div>
+								<div class="examples__content">
+									<div class="examples__text">
+										<div class="examples__list-title">В рамках проекта было реализовано:</div>
+										<ul class="examples__list">
+											<li class="slide__list-item">Функционал формирования заказа;</li>
+											<li class="slide__list-item">Каталог товаров;</li>
+											<li class="slide__list-item">Наполнение сайта контентом.</li>
+										</ul>
+										<div class="examples__list-title examples__title-margin-top">Для «IronHorse» мы выделили список работ на следующий этап сотрудничества:</div>
+										<ul class="examples__list">
+											<li class="slide__list-item">Добавить функцию «Оставить отзыв» на странице товара;</li>
+											<li class="slide__list-item">Управлять скидками;</li>
+											<li class="slide__list-item">Установить зависимость цены от зоны доставки;</li>
+											<li class="slide__list-item">Принимать и обрабатывать заказы;</li>
+											<li class="slide__list-item">Подключить онлайн оплату.</li>
+										</ul>
+									</div>
+									<div class="examples__image">
+										<img src="img/examples/example_3.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="swiper-button-prev"><span></span></button>
+						<button type="button" class="swiper-button-next"><span></span></button>
+					</div>
+				</div>
+				<div class="page__consultation">
+					<div class="consultation__wrapper">
+						<div class="consultation__title section__title">Бесплатная консультация</div>
+						<div class="consultation__form">
+							<form class="form">
+								<div class="form__input">
+									<input type="text" name="" required="">
+									<label>Имя</label>
+								</div>
+								<div class="form__input">
+									<input type="tel" name="" required="">
+									<label>Телефон</label>
+								</div>
+								<button class="consultation__button main__button">Оставить заявку</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1028,9 +1140,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230307001359"></script>
-	<!-- <script src=" js/files/script.js?_v=20230307001359"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230307001359">
+	<script src="js/app.min.js?_v=20230307114905"></script>
+	<!-- <script src=" js/files/script.js?_v=20230307114905"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230307114905">
 
 	</script>
 </body>
