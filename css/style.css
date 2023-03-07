@@ -710,6 +710,10 @@ main {
   margin-top: 15px;
 }
 
+.swiper-horizontal {
+  position: relative;
+}
+
 .page__banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1302,6 +1306,10 @@ main {
   margin-top: 48px;
 }
 
+.examples__slider {
+  overflow: hidden;
+}
+
 .examples__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1337,14 +1345,8 @@ main {
   margin-top: 32px;
 }
 
-.swiper-horizontal {
-  position: relative;
-  overflow-x: hidden;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
   top: 0%;
   -webkit-transform: translate(0, 50%);
       -ms-transform: translate(0, 50%);
@@ -1727,6 +1729,7 @@ main {
   }
 
   .examples__image {
+    padding-left: 0px;
     max-width: 100%;
     margin-bottom: 32px;
   }
