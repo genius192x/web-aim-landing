@@ -279,7 +279,7 @@ body::after {
 }
 
 .popup_show {
-  z-index: 150;
+  z-index: 500;
   visibility: visible;
   overflow: auto;
   pointer-events: auto;
@@ -342,6 +342,7 @@ body::after {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   padding: 20px;
   width: 100%;
+  z-index: 500;
   min-height: 600px;
   max-width: 800px;
   background: #ffffff;
@@ -696,6 +697,11 @@ body::after {
 
 .header__phone-icon {
   width: 35px;
+  height: 35px;
+}
+
+.header__phone-icon img {
+  max-width: 100%;
 }
 
 .icon-menu {
@@ -1418,10 +1424,20 @@ main {
 }
 
 .table__gift {
-  max-width: 20px;
+  max-height: 33px;
 }
 
 @media (min-width: 47.99875em) {
+  .title__bold {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header__phone-icon {
+    display: none;
+  }
+
   .table__subtitle-mobile {
     display: none;
   }
@@ -2050,6 +2066,10 @@ main {
 
   .main__button {
     padding: 16px 24px;
+  }
+
+  .table__gift {
+    max-width: 19px;
   }
 }
 
