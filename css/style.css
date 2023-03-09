@@ -646,6 +646,9 @@ body::after {
 
 .title__bold {
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .title__thead {
@@ -1428,12 +1431,6 @@ main {
 }
 
 @media (min-width: 47.99875em) {
-  .title__bold {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   .header__phone-icon {
     display: none;
   }
@@ -2067,10 +2064,6 @@ main {
 
   .main__button {
     padding: 16px 24px;
-  }
-
-  .table__gift {
-    max-width: 19px;
   }
 }
 
