@@ -5,12 +5,8 @@
 	<title>Title</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230307114905" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230307114905">
-
-	<link rel="icon" href="../blue_flower.ico" type="image/x-icon">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230309104327" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309104327">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -24,17 +20,17 @@
 					<button type="button" class="menu__icon icon-menu"></button>
 					<div class="menu__burger">
 						<ul class="menu__list">
-							<li class="menu__item text__font-weight_medium"><a href="" class="menu__link">О нас</a></li>
-							<li class="menu__item text__font-weight_medium"><a href="" class="menu__link">Цены</a></li>
-							<li class="menu__item text__font-weight_medium"><a href="" class="menu__link">Отзывы</a></li>
+							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__about" class="menu__link">О нас</a></li>
+							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__prices" class="menu__link">Цены</a></li>
+							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__reviews" class="menu__link">Отзывы</a></li>
 						</ul>
 					</div>
 					<div class="header__logo"><img src="img/LOGO.svg" alt=""></div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item text__font-weight_medium"><a href="" class="menu__link">О нас</a></li>
-							<li class="menu__item text__font-weight_medium"><a href="" class="menu__link">Цены</a></li>
-							<li class="menu__item text__font-weight_medium"><a href="" class="menu__link">Отзывы</a></li>
+							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__about" class="menu__link">О нас</a></li>
+							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__prices" class="menu__link">Цены</a></li>
+							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__reviews" class="menu__link">Отзывы</a></li>
 						</ul>
 					</nav>
 					<div class="header__phone">
@@ -44,422 +40,431 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="page__container">
-				<div class="page__banner">
-					<div class="banner__content">
-						<div class="banner__title">
-							<h1 class="banner__title title__main">Создадим <br> интернет-магазин для решения <br> бизнес задач
-							</h1>
-						</div>
-						<a href="" class="banner__button main__button">Бесплатная консультация</a>
+			<div class="page__banner page__container ">
+				<div class="banner__content">
+					<div class="banner__title">
+						<h1 class="banner__title title__main">Создадим <br> интернет-магазин для решения <br> бизнес задач
+						</h1>
 					</div>
-					<picture class="banner__background">
-						<source srcset="img/LOGO-MOBILE.svg" media="(max-width: 800px)" />
-						<img src="img/LOGO.png" alt="WEB-AiM" />
-					</picture>
-					<div class="banner__arrow">
-						<img src="img/arrow.svg" alt="">
+					<a href="" class="banner__button main__button">Бесплатная консультация</a>
+				</div>
+				<picture class="banner__background">
+					<source srcset="img/LOGO-MOBILE.svg" media="(max-width: 800px)" />
+					<img src="img/LOGO.png" alt="WEB-AiM" />
+				</picture>
+				<div class="banner__arrow">
+					<img src="img/arrow.svg" alt="">
+				</div>
+			</div>
+			<div class="page__steps page__section page__container">
+				<div class="steps__title section__title">Как мы работаем</div>
+				<div class="steps__list">
+					<div class="steps__item animation-item animation-no-hide">
+						<div class="steps__number">01 </div>
+						<div class="steps__text">Разберемся в <span class="no-wrap">бизнес-задаче</span> </div>
+						<img class="steps__arrow" src="img/arrow-small.svg" alt="">
+					</div>
+					<div class="steps__item animation-item animation-no-hide">
+						<div class="steps__number">02 </div>
+						<div class="steps__text">Подготовим техническое решение и план развития</div>
+						<img class="steps__arrow" src="img/arrow-small.svg" alt="">
+					</div>
+					<div class="steps__item animation-item animation-no-hide">
+						<div class="steps__number">03 </div>
+						<div class="steps__text">Создадим <span class="no-wrap">интернет-магазин</span></div>
+						<img class="steps__arrow" src="img/arrow-small.svg" alt="">
+					</div>
+					<div class="steps__item animation-item animation-no-hide">
+						<div class="steps__number">04</div>
+						<div class="steps__text">Окажем техническую поддержку</div>
 					</div>
 				</div>
-				<div class="page__steps">
-					<div class="steps__title section__title">Как мы работаем</div>
-					<div class="steps__list">
-						<div class="steps__item animation-item animation-no-hide">
-							<div class="steps__number">01 </div>
-							<div class="steps__text">Разберемся в бизнес-задаче </div>
-							<img class="steps__arrow" src="img/arrow-small.svg" alt="">
+			</div>
+			<div class="page__tariffs page__section page__container">
+				<div class="tariffs__title section__title"> Информация по тарифам</div>
+				<div class="tariffs__list">
+					<div class="tariffs__item animation-item animation-no-hide">
+						<div class="tariffs__item-info">
+							<div class="tariffs__price"> <span>220 000</span>₽</div>
+							<div class="tariffs__timeframe">Срок реализации: <br> <span>1 месяц</span></div>
 						</div>
-						<div class="steps__item animation-item animation-no-hide">
-							<div class="steps__number">02 </div>
-							<div class="steps__text">Подготовим техническое решение и план развития</div>
-							<img class="steps__arrow" src="img/arrow-small.svg" alt="">
-						</div>
-						<div class="steps__item animation-item animation-no-hide">
-							<div class="steps__number">03 </div>
-							<div class="steps__text">Создадим интернет-магазин</div>
-							<img class="steps__arrow" src="img/arrow-small.svg" alt="">
-						</div>
-						<div class="steps__item animation-item animation-no-hide">
-							<div class="steps__number">04</div>
-							<div class="steps__text">Окажем техническую поддержку</div>
+						<div class="tariffs__item-description">
+							<div class="tariffs__subtitle">Простой магазин, с одним складом и собственной доставкой</div>
+							<div class="tariffs__advantages">Интернет-магазин<span>+</span>Склад<span>+</span>Служба доставки </div>
 						</div>
 					</div>
-				</div>
-				<div class="page__tariffs">
-					<div class="tariffs__title section__title"> Информация по тарифам</div>
-					<div class="tariffs__list">
-						<div class="tariffs__item animation-item animation-no-hide">
-							<div class="tariffs__item-info">
-								<div class="tariffs__price"> <span>220 000</span>₽</div>
-								<div class="tariffs__timeframe">Срок реализации: <br> <span>1 месяц</span></div>
-							</div>
-							<div class="tariffs__item-description">
-								<div class="tariffs__subtitle">Простой магазин, с одним складом и собственной доставкой</div>
-								<div class="tariffs__advantages">Интернет-магазин<span>+</span>Склад<span>+</span>Служба доставки </div>
-							</div>
+					<div class="tariffs__item animation-item animation-no-hide">
+						<div class="tariffs__item-info">
+							<div class="tariffs__price"> <span>325 000</span>₽</div>
+							<div class="tariffs__timeframe">Срок реализации: <br> <span>2 месяца</span></div>
 						</div>
-						<div class="tariffs__item animation-item animation-no-hide">
-							<div class="tariffs__item-info">
-								<div class="tariffs__price"> <span>325 000</span>₽</div>
-								<div class="tariffs__timeframe">Срок реализации: <br> <span>2 месяца</span></div>
-							</div>
-							<div class="tariffs__item-description">
-								<div class="tariffs__subtitle">Дополнительные механики и основные интеграции</div>
-								<div class="tariffs__advantages">Интернет-магазин<span>+</span>Склад<span>+</span>Служба доставки<span>+</span>Интеграция с 1С<span>+</span>Интеграция с МойСклад</div>
-							</div>
+						<div class="tariffs__item-description">
+							<div class="tariffs__subtitle">Дополнительные механики и основные интеграции</div>
+							<div class="tariffs__advantages">Интернет-магазин<span>+</span>Склад<span>+</span>Служба доставки<span>+</span>Интеграция с 1С<span>+</span>Интеграция с МойСклад</div>
 						</div>
-						<div class="tariffs__item animation-item animation-no-hide">
-							<div class="tariffs__item-info">
-								<div class="tariffs__price"> <span>415 000</span>₽</div>
-								<div class="tariffs__timeframe">Срок реализации: <br> <span>3 месяца</span></div>
-							</div>
-							<div class="tariffs__item-description">
-								<div class="tariffs__subtitle">Сложные механики, полноценные интеграции, автоматизация</div>
-								<div class="tariffs__advantages">Интернет-магазин<span>+</span>Склад<span>+</span>Служба доставки<span>+</span>Интеграция с 1С<span>+</span>Интеграция с МойСклад<span>+</span>Маркетплейсы<span>+</span>ЦРМ</div>
-							</div>
+					</div>
+					<div class="tariffs__item animation-item animation-no-hide">
+						<div class="tariffs__item-info">
+							<div class="tariffs__price"> <span>415 000</span>₽</div>
+							<div class="tariffs__timeframe">Срок реализации: <br> <span>3 месяца</span></div>
+						</div>
+						<div class="tariffs__item-description">
+							<div class="tariffs__subtitle">Сложные механики, полноценные интеграции, автоматизация</div>
+							<div class="tariffs__advantages">Интернет-магазин<span>+</span>Склад<span>+</span>Служба доставки<span>+</span>Интеграция с 1С<span>+</span>Интеграция с МойСклад<span>+</span>Маркетплейсы<span>+</span>ЦРМ</div>
 						</div>
 					</div>
 				</div>
-				<div class="page__consultation">
-					<div class="consultation__wrapper">
-						<div class="consultation__title section__title">Бесплатная консультация</div>
-						<div class="consultation__form">
-							<form class="form">
-								<div class="form__input">
-									<input type="text" name="" required="">
-									<label>Имя</label>
-								</div>
-								<div class="form__input">
-									<input type="tel" name="" required="">
-									<label>Телефон</label>
-								</div>
-								<button class="consultation__button main__button">Оставить заявку</button>
-							</form>
-						</div>
+			</div>
+			<div class="page__consultation page__section page__container">
+				<div class="consultation__wrapper">
+					<div class="consultation__title section__title">Бесплатная консультация</div>
+					<div class="consultation__form">
+						<form class="form">
+							<div class="form__input">
+								<input type="text" name="" required="">
+								<label>Имя</label>
+							</div>
+							<div class="form__input">
+								<input id="tel" type="tel" name="" required="">
+								<label>Телефон</label>
+							</div>
+							<button class="consultation__button main__button">Оставить заявку</button>
+						</form>
 					</div>
 				</div>
-				<div class="page__about">
-					<div class="about__title section__title">О нас</div>
-					<div class="about__slider swiper">
-						<div class="about__wrapper swiper-wrapper">
-							<div class="about__slide swiper-slide">
-								<div class="about__subtitle">Не менеджеры, а бизнес-аналитики
-									<div class="about__text">Каждый из менеджеров прошел курс продуктовой аналитики
-										Умеем оцифровывать бизнес, находить "бутылочные горлышки" и проблемные места в процессах компаний с помощью аналитики.
-										Знаем как устроены сложные процессы продаж и инженерные процессы</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_1.svg" alt="">
-								</div>
+			</div>
+			<div class="page__about page__section page__container">
+				<div class="about__title section__title">О нас</div>
+				<div class="about__slider swiper">
+					<div class="about__wrapper swiper-wrapper">
+						<div class="about__slide swiper-slide swiper-slide-about">
+							<div class="about__subtitle">Не менеджеры, а бизнес-аналитики
+								<div class="about__text">Каждый из менеджеров прошел курс продуктовой аналитики
+									Умеем оцифровывать бизнес, находить "бутылочные горлышки" и проблемные места в процессах компаний с помощью аналитики.
+									Знаем как устроены сложные процессы продаж и инженерные процессы</div>
 							</div>
-							<div class="about__slide swiper-slide">
-								<div class="about__subtitle">250 успешно запущенных интернет-магазинов за 10 лет
-									<div class="about__text">Опыт в запуске как больших проектов с нетиповой логикой и функционалом, так и типовых интернет-магазинов.</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_2.svg" alt="">
-								</div>
+							<div class="about__image">
+								<img src="img/about/icon_1.svg" alt="">
 							</div>
-							<div class="about__slide swiper-slide">
-								<div class="about__subtitle">Гарантии сроков и результатов
-									<div class="about__text">Оцениваем сроки и стоимость работ и прописываем их в договоре.
-										В договоре мы прописываем не только те работы, которые будут делаться, но и тот результат, который должен быть получен.</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_3.svg" alt="">
-								</div>
+						</div>
+						<div class="about__slide swiper-slide swiper-slide-about">
+							<div class="about__subtitle">250 успешно запущенных интернет-магазинов за 10 лет
+								<div class="about__text">Опыт в запуске как больших проектов с нетиповой логикой и функционалом, так и типовых интернет-магазинов.</div>
 							</div>
-							<div class="about__slide swiper-slide">
-								<div class="about__subtitle">Прозрачность в работе
-									<div class="about__text">Все задачи заводим в CRM Битрикс24. 24/7 вы видите сроки выполнения и прогресс по задачам.</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_4.svg" alt="">
-								</div>
+							<div class="about__image">
+								<img src="img/about/icon_2.svg" alt="">
 							</div>
+						</div>
+						<div class="about__slide swiper-slide swiper-slide-about">
+							<div class="about__subtitle">Гарантии сроков и результатов
+								<div class="about__text">Оцениваем сроки и стоимость работ и прописываем их в договоре.
+									В договоре мы прописываем не только те работы, которые будут делаться, но и тот результат, который должен быть получен.</div>
+							</div>
+							<div class="about__image">
+								<img src="img/about/icon_3.svg" alt="">
+							</div>
+						</div>
+						<div class="about__slide swiper-slide swiper-slide-about">
+							<div class="about__subtitle">Прозрачность в работе
+								<div class="about__text">Все задачи заводим в CRM Битрикс24. 24/7 вы видите сроки выполнения и прогресс по задачам.</div>
+							</div>
+							<div class="about__image">
+								<img src="img/about/icon_4.svg" alt="">
+							</div>
+						</div>
 
-						</div>
-						<div class="swiper-pagination"></div>
 					</div>
-					<div class="about__grid">
-						<div class="about__items">
-							<div class="about__item animation-item animation-no-hide">
-								<div class="about__subtitle">Не менеджеры, а бизнес-аналитики
-									<div class="about__text">Каждый из менеджеров прошел курс продуктовой аналитики
-										Умеем оцифровывать бизнес, находить "бутылочные горлышки" и проблемные места в процессах компаний с помощью аналитики.
-										Знаем как устроены сложные процессы продаж и инженерные процессы</div>
-								</div>
-								<div class="about__image ">
-									<img src="img/about/icon_1.svg" alt="">
-								</div>
+					<div class="swiper-pagination swiper-pagination-about"></div>
+				</div>
+				<div class="about__grid">
+					<div class="about__items">
+						<div class="about__item animation-item animation-no-hide">
+							<div class="about__subtitle">Не менеджеры, а бизнес-аналитики
+								<div class="about__text">Каждый из менеджеров прошел курс продуктовой аналитики
+									Умеем оцифровывать бизнес, находить "бутылочные горлышки" и проблемные места в процессах компаний с помощью аналитики.
+									Знаем как устроены сложные процессы продаж и инженерные процессы</div>
 							</div>
-							<div class="about__item animation-item animation-no-hide">
-								<div class="about__subtitle">250 успешно запущенных интернет-магазинов за 10 лет
-									<div class="about__text">Опыт в запуске как больших проектов с нетиповой логикой и функционалом, так и типовых интернет-магазинов.</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_2.svg" alt="">
-								</div>
+							<div class="about__image ">
+								<img src="img/about/icon_1.svg" alt="">
 							</div>
-							<div class="about__item animation-item animation-no-hide">
-								<div class="about__subtitle">Гарантии сроков и результатов
-									<div class="about__text">Оцениваем сроки и стоимость работ и прописываем их в договоре.
-										В договоре мы прописываем не только те работы, которые будут делаться, но и тот результат, который должен быть получен.</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_3.svg" alt="">
-								</div>
+						</div>
+						<div class="about__item animation-item animation-no-hide">
+							<div class="about__subtitle">250 успешно запущенных интернет-магазинов за 10 лет
+								<div class="about__text">Опыт в запуске как больших проектов с нетиповой логикой и функционалом, так и типовых интернет-магазинов.</div>
 							</div>
-							<div class="about__item animation-item animation-no-hide">
-								<div class="about__subtitle">Прозрачность в работе
-									<div class="about__text">Все задачи заводим в CRM Битрикс24. 24/7 вы видите сроки выполнения и прогресс по задачам.</div>
-								</div>
-								<div class="about__image">
-									<img src="img/about/icon_4.svg" alt="">
-								</div>
+							<div class="about__image">
+								<img src="img/about/icon_2.svg" alt="">
+							</div>
+						</div>
+						<div class="about__item animation-item animation-no-hide">
+							<div class="about__subtitle">Гарантии сроков и результатов
+								<div class="about__text">Оцениваем сроки и стоимость работ и прописываем их в договоре.
+									В договоре мы прописываем не только те работы, которые будут делаться, но и тот результат, который должен быть получен.</div>
+							</div>
+							<div class="about__image">
+								<img src="img/about/icon_3.svg" alt="">
+							</div>
+						</div>
+						<div class="about__item animation-item animation-no-hide">
+							<div class="about__subtitle">Прозрачность в работе
+								<div class="about__text">Все задачи заводим в CRM Битрикс24. 24/7 вы видите сроки выполнения и прогресс по задачам.</div>
+							</div>
+							<div class="about__image">
+								<img src="img/about/icon_4.svg" alt="">
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="page__approach">
-					<div class="approach__title section__title">Наш подход</div>
-					<div data-tabs class="tabs">
-						<nav data-tabs-titles class="tabs__navigation ">
-							<button type="button" class="tabs__link _tab-active">Аналитика и оценка</button>
-							<button type="button" class="tabs__link">Выбор решения</button>
-							<button type="button" class="tabs__link">Создание плана развития</button>
-							<button type="button" class="tabs__link">Разработка</button>
-							<button type="button" class="tabs__link">Внедрение и развитие</button>
-						</nav>
-						<div data-tabs-body class="tabs__content">
-							<div class="tabs__body">
-								<div class="tabs__title">Проводим аналитику и делаем предпроектное исследование</div>
-								<div class="tabs__wrapper">
-									<div class="tabs__columns">
-										<div class="tabs__column">
-											<ul class="tabs__list">
-												<li class="tabs__item">Анализируем текущую задачу бизнеса;</li>
-												<li class="tabs__item">Выясняем все потребности сотрудников и клиентов;</li>
-												<li class="tabs__item">Описываем пожелания и ожидания от продукта;</li>
-												<li class="tabs__item">Прописываем все желаемые цели и задачи, которых мы хотим достичь;</li>
-												<li class="tabs__item">Выясняем детали интеграций с внешними системами;</li>
-												<li class="tabs__item">Выясняем детали интеграций с внешними системами;</li>
-											</ul>
-										</div>
-										<div class="tabs__column">
-											<div class="tabs__column-title">Цели и задачи ранжируются по важности и срочности для разбиения разработки по этапам.</div>
-											<div class="tabs__column-subtitle">Результат:</div>
-											<ul class="tabs__list list-result">
-												<li class="tabs__item">Этапы;</li>
-												<li class="tabs__item">Очередность;</li>
-												<li class="tabs__item">Результаты;</li>
-												<li class="tabs__item">Метрики оценки успешность достижения.</li>
-											</ul>
-										</div>
-									</div>
-									<div class="tabs__profile">
-										<div class="tabs__data">
-											<div class="tabs__image">
-												<img src="img/avatars/avatar_1.svg" alt="">
-											</div>
-											<div class="tabs__name">
-												<p>Дмитрий</p>
-											</div>
-											<div class="tabs__position">
-												<p>
-													Ведущий менеджер
-													по работе с клиентами
-												</p>
-											</div>
-										</div>
-										<div class="tabs__description">
-											<p>«Перед тем как подобрать конкретное техническое решение важно понимать какую задачу решаем прямо сейчас, как устроен бизнес, какие механики в работе с клиентами используют, количество товаров и откуда товары попадают на сайт, сколько складов и как работает доставка, как формируются цены для разных типов клиентов и какие типы оплат требуются.
-												Это только небольшой список вопросов, на который мы отвечаем вместе с клиентами, чтобы разобраться, какой фундамент нужно заложить, что делать прямо сейчас, что может дождаться своей очереди». </p>
-											<a class="tabs__button main__button">Бесплатная консультация </a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tabs__body">
-								<div class="tabs__title">Выбираем оптимальное техническое решение</div>
-								<div class="tabs__wrapper">
-									<div class="tabs__column-title column-title__main">После агрегации требований мы знаем что требуется проекту и выбираем лицензии, модули или кастомные доработки для полноценного функционала сайта.
-										Например:
-									</div>
-									<div class="tabs__columns">
-										<div class="tabs__column">
-											<ul class="tabs__list">
-												<li class="tabs__item">Продуманный каталог</li>
-												<li class="tabs__item">Удобные фильтры</li>
-												<li class="tabs__item">Связанные и рекомендованные товары</li>
-												<li class="tabs__item">Поиск с учетом ошибок и рекомендаций</li>
-												<li class="tabs__item">Интеграция со складами</li>
-											</ul>
-										</div>
-										<div class="tabs__column">
-											<ul class="tabs__list list-result">
-												<li class="tabs__item">Личные кабинеты</li>
-												<li class="tabs__item">Формирование цен и системы скидок для разных категорий клиентов</li>
-												<li class="tabs__item">Разные типы и операторы доставки</li>
-												<li class="tabs__item">Интеграции с маркетплейсами</li>
-												<li class="tabs__item">Подготовка для SEO-продвижения</li>
-												<li class="tabs__item">CRM</li>
-											</ul>
-										</div>
-									</div>
-									<div class="tabs__profile profile-second">
-										<div class="tabs__data">
-											<div class="tabs__image">
-												<img src="img/avatars/avatar_2.svg" alt="">
-											</div>
-											<div class="tabs__name">
-												<p>Никита</p>
-											</div>
-											<div class="tabs__position">
-												<p>
-													Руководитель
-													отдела разработки
-												</p>
-											</div>
-										</div>
-										<div class="tabs__description">
-											<p>«Мы выбрали технологическую платформу 1С-Битрикс, чтобы эффективно решать задачи клиентов. 
-												Система расширяема, мы всегда можем запустить простой интернет-магазин и постепенно его развивать. Для многих бизнесов не нужно сразу запускать большой и сложный сайт, разумно начать с малого и когда бизнес заработает и начнет приносить прибыль уже усложнять и улучшать.
-												Мы имеем большое сообщество разработчиков, это помогает делится знаниями и развивать систему дальше. 
-												Немаловажно и что Битрикс частная компания, которая постоянно развивается и развивает свой продукт».</p>
-											<a class="tabs__button main__button">Бесплатная консультация </a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tabs__body">
-								<div class="tabs__title">Начинаем с MVP</div>
-								<div class="tabs__wrapper">
-									<div class="tabs__columns">
-										<div class="tabs__column">
-											<div class="tabs__column-title">Сайт — инструмент бизнеса и он должен приносить прибыль. Чем быстрее сайт начнет приносить конверсии, тем быстрее можно проанализировать его точки роста.
-												Поэтому мы начинаем с MVP - минимального необходимого для работы сайта функционала.</div>
-										</div>
-										<div class="tabs__column">
-											<div class="tabs__column-title">MVP для ускорения выхода на рынок и дальнейшего развития интернет-магазина:</div>
-											<ul class="tabs__list list-result">
-												<li class="tabs__item">Рекламы;</li>
-												<li class="tabs__item">SEO-продвижения;</li>
-												<li class="tabs__item">Web-аналитики и сквозной аналитики;</li>
-												<li class="tabs__item">Интеграции с маркетплейсами;</li>
-												<li class="tabs__item">Работы с заказами в CRM.</li>
-											</ul>
-										</div>
-									</div>
-									<div class="tabs__profile">
-										<div class="tabs__data">
-											<div class="tabs__image">
-												<img src="img/avatars/avatar_3.svg" alt="">
-											</div>
-											<div class="tabs__name">
-												<p>Антон</p>
-											</div>
-											<div class="tabs__position">
-												<p>
-													бизнес-аналитик
-												</p>
-											</div>
-										</div>
-										<div class="tabs__description">
-											<p>«Мы понимаем и продвигаем идею, что сайт, не законченный и монолитный продукт, а живой и развивающийся вместе с бизнесом инструмент, который должен иметь все возможности для трансформации и адаптации под меняющиеся условия и реалии бизнеса. 
-												У каждого этапа есть своё время. При первом запуске многие функции не нужны и на них можно сэкономить.
-												Понимая весь путь мы не боимся, что придётся переделывать всё с самого начала при подключении какой-то новой функции».</p>
-											<a class="tabs__button main__button">Бесплатная консультация </a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tabs__body">
-								<div class="tabs__title">Прозрачность разработки</div>
-								<div class="tabs__wrapper">
-									<div class="tabs__columns">
-										<div class="tabs__column">
-											<ul class="tabs__list list-result">
-												<li class="tabs__item">Все договоренности на портале Битрикс24;</li>
-												<li class="tabs__item">История коммуникации хранится в задаче;</li>
-												<li class="tabs__item">Проект делится на этапы и задачи с понятными результатами, сроками и ответственными;</li>
-												<li class="tabs__item">Все задачи, комментарии, документы всегда доступны.</li>
-												<li class="tabs__item">Задачи с первого дня работы доступны в системе управления проектами и доступны 24/7</li>
-											</ul>
-										</div>
-										<div class="tabs__column">
-											<div class="tabs__column-title">Проектом занимается один постоянный менеджер, за счёт чего он всегда в курсе всех деталей.
-												Работаем по модели SCRUM или waterfall, в зависимости от проекта.</div>
-											<div class="tabs__column-title-bold">По статистике 95% проектов заканчиваются в обещанные сроки.</div>
-										</div>
-									</div>
-									<div class="tabs__profile">
-										<div class="tabs__data">
-											<div class="tabs__image">
-												<img src="img/avatars/avatar_4.svg" alt="">
-											</div>
-											<div class="tabs__name">
-												<p>Александр</p>
-											</div>
-											<div class="tabs__position">
-												<p>
-													Project Manager
-												</p>
-											</div>
-										</div>
-										<div class="tabs__description">
-											<p>«Мы добиваемся максимальной прозрачности для наших клиентов как по стоимости и срокам, так и по ходу работ – наши клиенты всегда в курсе того, что именно и зачем происходит на их проекте. Все задачи ставятся по SMART и всегда доступны на нашем рабочем портале.Мы одинаково хорошо работаем как по гибкой модели управления (Agile), так и успешно справляемся с проектами, к в которых заказчику принциально использовать каскадную модель (Whatefall)».</p>
-											<a class="tabs__button main__button">Бесплатная консультация </a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tabs__body">
-								<div class="tabs__title">Обучение и развитие проекта</div>
-								<div class="tabs__wrapper">
-									<div class="tabs__wrapper-witdout-columns">
-										<div class="tabs__column-title column-title__main">Обеспечиваем полноценную техническую и бизнес-поддержку.
-											Каждый месяц готовим отчёт о проделанных работах и план, который позволят проекту быть более успешным по сравнению с конкурентами.
-											Следят за обновлениям серверного ПО.
-										</div>
+			</div>
+			<div class="page__approach page__section page__container">
+				<div class="approach__title section__title">Наш подход</div>
+				<div data-tabs class="tabs">
+					<nav data-tabs-titles class="tabs__navigation ">
+						<button type="button" class="tabs__link _tab-active">Аналитика и оценка
+							<img class="tabs__arrow" src="img/arrow-down.svg" alt="">
+						</button>
+						<button type="button" class="tabs__link">Выбор решения
+							<img class="tabs__arrow" src="img/arrow-down.svg" alt="">
+						</button>
+						<button type="button" class="tabs__link">Создание плана развития
+							<img class="tabs__arrow" src="img/arrow-down.svg" alt="">
+						</button>
+						<button type="button" class="tabs__link">Разработка
+							<img class="tabs__arrow" src="img/arrow-down.svg" alt="">
+						</button>
+
+						<button type="button" class="tabs__link">Внедрение и развитие</button>
+					</nav>
+					<div data-tabs-body class="tabs__content">
+						<div class="tabs__body">
+							<div class="tabs__title">Проводим аналитику и делаем предпроектное исследование</div>
+							<div class="tabs__wrapper">
+								<div class="tabs__columns">
+									<div class="tabs__column">
 										<ul class="tabs__list">
-											<li class="tabs__item">Работа с заказами;</li>
-											<li class="tabs__item">Загрузка товаров;</li>
-											<li class="tabs__item">Учет остатков;</li>
-											<li class="tabs__item">Формирование цен для разных категорий клиентов;</li>
-											<li class="tabs__item">Выгрузка необходимых отчётов.</li>
+											<li class="tabs__item">Анализируем текущую задачу бизнеса;</li>
+											<li class="tabs__item">Выясняем все потребности сотрудников и клиентов;</li>
+											<li class="tabs__item">Описываем пожелания и ожидания от продукта;</li>
+											<li class="tabs__item">Прописываем все желаемые цели и задачи, которых мы хотим достичь;</li>
+											<li class="tabs__item">Выясняем детали интеграций с внешними системами;</li>
+											<li class="tabs__item">Выясняем детали интеграций с внешними системами;</li>
 										</ul>
 									</div>
+									<div class="tabs__column">
+										<div class="tabs__column-title">Цели и задачи ранжируются по важности и срочности для разбиения разработки по этапам.</div>
+										<div class="tabs__column-subtitle">Результат:</div>
+										<ul class="tabs__list list-result">
+											<li class="tabs__item">Этапы;</li>
+											<li class="tabs__item">Очередность;</li>
+											<li class="tabs__item">Результаты;</li>
+											<li class="tabs__item">Метрики оценки успешность достижения.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tabs__profile">
+									<div class="tabs__data">
+										<div class="tabs__image">
+											<img src="img/avatars/avatar_1.svg" alt="">
+										</div>
+										<div class="tabs__name">
+											<p>Дмитрий</p>
+										</div>
+										<div class="tabs__position">
+											<p>
+												Ведущий менеджер
+												по работе с клиентами
+											</p>
+										</div>
+									</div>
+									<div class="tabs__description">
+										<p>«Перед тем как подобрать конкретное техническое решение важно понимать какую задачу решаем прямо сейчас, как устроен бизнес, какие механики в работе с клиентами используют, количество товаров и откуда товары попадают на сайт, сколько складов и как работает доставка, как формируются цены для разных типов клиентов и какие типы оплат требуются.
+											Это только небольшой список вопросов, на который мы отвечаем вместе с клиентами, чтобы разобраться, какой фундамент нужно заложить, что делать прямо сейчас, что может дождаться своей очереди». </p>
+										<a class="tabs__button main__button">Бесплатная консультация </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__body">
+							<div class="tabs__title">Выбираем оптимальное техническое решение</div>
+							<div class="tabs__wrapper">
+								<div class="tabs__column-title column-title__main">После агрегации требований мы знаем что требуется проекту и выбираем лицензии, модули или кастомные доработки для полноценного функционала сайта.
+									Например:
+								</div>
+								<div class="tabs__columns">
+									<div class="tabs__column">
+										<ul class="tabs__list">
+											<li class="tabs__item">Продуманный каталог</li>
+											<li class="tabs__item">Удобные фильтры</li>
+											<li class="tabs__item">Связанные и рекомендованные товары</li>
+											<li class="tabs__item">Поиск с учетом ошибок и рекомендаций</li>
+											<li class="tabs__item">Интеграция со складами</li>
+										</ul>
+									</div>
+									<div class="tabs__column">
+										<ul class="tabs__list list-result">
+											<li class="tabs__item">Личные кабинеты</li>
+											<li class="tabs__item">Формирование цен и системы скидок для разных категорий клиентов</li>
+											<li class="tabs__item">Разные типы и операторы доставки</li>
+											<li class="tabs__item">Интеграции с маркетплейсами</li>
+											<li class="tabs__item">Подготовка для SEO-продвижения</li>
+											<li class="tabs__item">CRM</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tabs__profile profile-second">
+									<div class="tabs__data">
+										<div class="tabs__image">
+											<img src="img/avatars/avatar_2.svg" alt="">
+										</div>
+										<div class="tabs__name">
+											<p>Никита</p>
+										</div>
+										<div class="tabs__position">
+											<p>
+												Руководитель
+												отдела разработки
+											</p>
+										</div>
+									</div>
+									<div class="tabs__description">
+										<p>«Мы выбрали технологическую платформу 1С-Битрикс, чтобы эффективно решать задачи клиентов. 
+											Система расширяема, мы всегда можем запустить простой интернет-магазин и постепенно его развивать. Для многих бизнесов не нужно сразу запускать большой и сложный сайт, разумно начать с малого и когда бизнес заработает и начнет приносить прибыль уже усложнять и улучшать.
+											Мы имеем большое сообщество разработчиков, это помогает делится знаниями и развивать систему дальше. 
+											Немаловажно и что Битрикс частная компания, которая постоянно развивается и развивает свой продукт».</p>
+										<a class="tabs__button main__button">Бесплатная консультация </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__body">
+							<div class="tabs__title">Начинаем с MVP</div>
+							<div class="tabs__wrapper">
+								<div class="tabs__columns">
+									<div class="tabs__column">
+										<div class="tabs__column-title">Сайт — инструмент бизнеса и он должен приносить прибыль. Чем быстрее сайт начнет приносить конверсии, тем быстрее можно проанализировать его точки роста.
+											Поэтому мы начинаем с MVP - минимального необходимого для работы сайта функционала.</div>
+									</div>
+									<div class="tabs__column">
+										<div class="tabs__column-title">MVP для ускорения выхода на рынок и дальнейшего развития интернет-магазина:</div>
+										<ul class="tabs__list list-result">
+											<li class="tabs__item">Рекламы;</li>
+											<li class="tabs__item">SEO-продвижения;</li>
+											<li class="tabs__item">Web-аналитики и сквозной аналитики;</li>
+											<li class="tabs__item">Интеграции с маркетплейсами;</li>
+											<li class="tabs__item">Работы с заказами в CRM.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tabs__profile">
+									<div class="tabs__data">
+										<div class="tabs__image">
+											<img src="img/avatars/avatar_3.svg" alt="">
+										</div>
+										<div class="tabs__name">
+											<p>Антон</p>
+										</div>
+										<div class="tabs__position">
+											<p>
+												бизнес-аналитик
+											</p>
+										</div>
+									</div>
+									<div class="tabs__description">
+										<p>«Мы понимаем и продвигаем идею, что сайт, не законченный и монолитный продукт, а живой и развивающийся вместе с бизнесом инструмент, который должен иметь все возможности для трансформации и адаптации под меняющиеся условия и реалии бизнеса. 
+											У каждого этапа есть своё время. При первом запуске многие функции не нужны и на них можно сэкономить.
+											Понимая весь путь мы не боимся, что придётся переделывать всё с самого начала при подключении какой-то новой функции».</p>
+										<a class="tabs__button main__button">Бесплатная консультация </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__body">
+							<div class="tabs__title">Прозрачность разработки</div>
+							<div class="tabs__wrapper">
+								<div class="tabs__columns">
+									<div class="tabs__column">
+										<ul class="tabs__list list-result">
+											<li class="tabs__item">Все договоренности на портале Битрикс24;</li>
+											<li class="tabs__item">История коммуникации хранится в задаче;</li>
+											<li class="tabs__item">Проект делится на этапы и задачи с понятными результатами, сроками и ответственными;</li>
+											<li class="tabs__item">Все задачи, комментарии, документы всегда доступны.</li>
+											<li class="tabs__item">Задачи с первого дня работы доступны в системе управления проектами и доступны 24/7</li>
+										</ul>
+									</div>
+									<div class="tabs__column">
+										<div class="tabs__column-title">Проектом занимается один постоянный менеджер, за счёт чего он всегда в курсе всех деталей.
+											Работаем по модели SCRUM или waterfall, в зависимости от проекта.</div>
+										<div class="tabs__column-title-bold">По статистике 95% проектов заканчиваются в обещанные сроки.</div>
+									</div>
+								</div>
+								<div class="tabs__profile">
+									<div class="tabs__data">
+										<div class="tabs__image">
+											<img src="img/avatars/avatar_4.svg" alt="">
+										</div>
+										<div class="tabs__name">
+											<p>Александр</p>
+										</div>
+										<div class="tabs__position">
+											<p>
+												Project Manager
+											</p>
+										</div>
+									</div>
+									<div class="tabs__description">
+										<p>«Мы добиваемся максимальной прозрачности для наших клиентов как по стоимости и срокам, так и по ходу работ – наши клиенты всегда в курсе того, что именно и зачем происходит на их проекте. Все задачи ставятся по SMART и всегда доступны на нашем рабочем портале.Мы одинаково хорошо работаем как по гибкой модели управления (Agile), так и успешно справляемся с проектами, к в которых заказчику принциально использовать каскадную модель (Whatefall)».</p>
+										<a class="tabs__button main__button">Бесплатная консультация </a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__body">
+							<div class="tabs__title">Обучение и развитие проекта</div>
+							<div class="tabs__wrapper">
+								<div class="tabs__wrapper-witdout-columns">
+									<div class="tabs__column-title column-title__main">Обеспечиваем полноценную техническую и бизнес-поддержку.
+										Каждый месяц готовим отчёт о проделанных работах и план, который позволят проекту быть более успешным по сравнению с конкурентами.
+										Следят за обновлениям серверного ПО.
+									</div>
+									<ul class="tabs__list">
+										<li class="tabs__item">Работа с заказами;</li>
+										<li class="tabs__item">Загрузка товаров;</li>
+										<li class="tabs__item">Учет остатков;</li>
+										<li class="tabs__item">Формирование цен для разных категорий клиентов;</li>
+										<li class="tabs__item">Выгрузка необходимых отчётов.</li>
+									</ul>
+								</div>
 
-									<div class="tabs__profile">
-										<div class="tabs__data">
-											<div class="tabs__image">
-												<img src="img/avatars/avatar_2.svg" alt="">
-											</div>
-											<div class="tabs__name">
-												<p>Никита</p>
-											</div>
-											<div class="tabs__position">
-												<p>
-													Руководитель
-													отдела разработки
-												</p>
-											</div>
+								<div class="tabs__profile">
+									<div class="tabs__data">
+										<div class="tabs__image">
+											<img src="img/avatars/avatar_2.svg" alt="">
 										</div>
-										<div class="tabs__description">
-											<p>«На регулярных встречах с заказчиком, каждый месяц выстраивается месячный план работ по проекту, который может включать как те работы, которые приходят от заказчика, так и те работы, которые предложены нашими специалистами на базе аналитики, трендов, маркетинговой стратегии и тд».</p>
-											<a class="tabs__button main__button">Бесплатная консультация </a>
+										<div class="tabs__name">
+											<p>Никита</p>
 										</div>
+										<div class="tabs__position">
+											<p>
+												Руководитель
+												отдела разработки
+											</p>
+										</div>
+									</div>
+									<div class="tabs__description">
+										<p>«На регулярных встречах с заказчиком, каждый месяц выстраивается месячный план работ по проекту, который может включать как те работы, которые приходят от заказчика, так и те работы, которые предложены нашими специалистами на базе аналитики, трендов, маркетинговой стратегии и тд».</p>
+										<a class="tabs__button main__button">Бесплатная консультация </a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="page__prices">
+			</div>
+			<div class="page__prices page__section">
+				<div class="page__container">
 					<div class="prices__title section__title">Цены</div>
 					<div class="prices__subtitle">Финальная стоимость бывает меньше ожидаемой. Давайте разберемся с задачей.</div>
-					<div class="prices__wrapper-desktop">
+					<div class="prices__wrapper-desktop page__container">
 						<table class="table">
 							<thead>
 								<tr>
@@ -707,395 +712,435 @@
 							</tbody>
 						</table>
 					</div>
-					<div class="prices__wrapper-mobile">
-						<p class="table__subtitle">Интернет магазин на шаблоне</p>
-						<table class="table">
-							<thead>
-								<tr>
-									<td>
-										<p class="table__type">Базовый</p>
-										<p class="table__price">220 000</p>
-										<p>рублей</p>
-									</td>
-									<td>
-										<p class="table__type">Стандартный</p>
-										<p class="table__price">325 000</p>
-										<p>рублей</p>
-									</td>
-									<td>
-										<p class="table__type">расширенный</p>
-										<p class="table__price">415 000</p>
-										<p>рублей</p>
-									</td>
-								</tr>
-							</thead>
-							<tfoot>
-								<tr>
-									<td><a class="table__link" href="#">Хочу</a></td>
-									<td><a class="table__link" href="#">Хочу</a></td>
-									<td><a class="table__link" href="#">Хочу</a></td>
-								</tr>
-							</tfoot>
-							<tbody>
-								<tr>
-									<td colspan="3">
-										<p>ПОДАРОК!!! Аренда выделенного сервера на 6 мес + SSL сертификат сроком на 1 год</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td class="table__title" colspan="3">
-										<p>Настройка фильтров и сортировок</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Настройка поиска по сайту</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Импорт каталога из файла (xls, csv, xml, yml)</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Отображение остатков</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>Только 1 склад</p>
-									</td>
-									<td>
-										<p>Несколько складов</p>
-									</td>
-									<td>
-										<p>Несколько складов</p>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Вывод типов цены (опт, розница, и тд)</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>Только 1 цена</p>
-									</td>
-									<td>
-										<p>Несколько типов цен</p>
-									</td>
-									<td>
-										<p>Несколько типов цен</p>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Акции, скидки, купоны</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Размещение новостей, банеров, текстов на сайте</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Оплата картой на сайте (интернет-эквайринг+ онлайн касса)</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Формы обратной связи с защитой от спама</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Импорт каталога из файла (xls, csv, xml, yml)</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Подключение Яндекс Метрики</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p>Базовая</p>
-									</td>
-									<td>
-										<p>Добавляем 5 целей</p>
-									</td>
-									<td>
-										<p>Электронная коммерция</p>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>SEO Оптимизация сайта</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td>
-										<p>Вывод сайта в зеленую зону Google pagespeed</p>
-									</td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Тестирование проекта, мониторинг качества перед запуском</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Онлайн чат (Битрикс24, jivosite и тд)</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Покупка в 1 клик</p>
-									</td>
-								</tr>
-								<tr>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Интеграция с 1С/МойСклад (товары, заказы, контрагенты)</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Оптимизация структуры каталога</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Создадим и настроим статусы заказов, а также настроим логику и автоматику статусов заказов внутри административной панели</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Интеграция с CRM Битрикс24</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Подключение к Маркетплейсам (OZON, Яндекс Маркет, Wildberryes)</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Настройка авторизации и регистрации по через SMS/Соцсети</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Почтовые шаблоны в фирменном оформлении</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-								<tr>
-									<td colspan="3">
-										<p>Настройка автоматических рассылок (забытая корзина, поздавления, рассылка скидок)</p>
-									</td>
-								</tr>
-								<tr>
-									<td>&mdash;</td>
-									<td>&mdash;</td>
-									<td><img src="img/check-square.svg" alt=""></td>
-								</tr>
-							</tbody>
+				</div>
+				<p class="table__subtitle-mobile">Интернет магазин на шаблоне</p>
+				<div class="prices__wrapper-mobile">
 
-						</table>
-					</div>
+					<table class="table">
+						<thead>
+							<tr>
+								<td>
+									<p class="table__type">Базовый</p>
+									<p class="table__price">220 000</p>
+									<p>рублей</p>
+								</td>
+								<td>
+									<p class="table__type">Стандартный</p>
+									<p class="table__price">325 000</p>
+									<p>рублей</p>
+								</td>
+								<td>
+									<p class="table__type">расширенный</p>
+									<p class="table__price">415 000</p>
+									<p>рублей</p>
+								</td>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td><a class="table__link" href="#">Хочу</a></td>
+								<td><a class="table__link" href="#">Хочу</a></td>
+								<td><a class="table__link" href="#">Хочу</a></td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<td colspan="3">
+									<p>ПОДАРОК!!! Аренда выделенного сервера на 6 мес + SSL сертификат сроком на 1 год</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td class="table__title" colspan="3">
+									<p>Настройка фильтров и сортировок</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Настройка поиска по сайту</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Импорт каталога из файла (xls, csv, xml, yml)</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Отображение остатков</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Только 1 склад</p>
+								</td>
+								<td>
+									<p>Несколько складов</p>
+								</td>
+								<td>
+									<p>Несколько складов</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Вывод типов цены (опт, розница, и тд)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Только 1 цена</p>
+								</td>
+								<td>
+									<p>Несколько типов цен</p>
+								</td>
+								<td>
+									<p>Несколько типов цен</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Акции, скидки, купоны</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Размещение новостей, банеров, текстов на сайте</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Оплата картой на сайте (интернет-эквайринг+ онлайн касса)</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Формы обратной связи с защитой от спама</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Импорт каталога из файла (xls, csv, xml, yml)</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Подключение Яндекс Метрики</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Базовая</p>
+								</td>
+								<td>
+									<p>Добавляем 5 целей</p>
+								</td>
+								<td>
+									<p>Электронная коммерция</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>SEO Оптимизация сайта</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td>
+									<p>Вывод сайта в зеленую зону Google pagespeed</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Тестирование проекта, мониторинг качества перед запуском</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Онлайн чат (Битрикс24, jivosite и тд)</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Покупка в 1 клик</p>
+								</td>
+							</tr>
+							<tr>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Интеграция с 1С/МойСклад (товары, заказы, контрагенты)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Оптимизация структуры каталога</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Создадим и настроим статусы заказов, а также настроим логику и автоматику статусов заказов внутри административной панели</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Интеграция с CRM Битрикс24</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Подключение к Маркетплейсам (OZON, Яндекс Маркет, Wildberryes)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Настройка авторизации и регистрации по через SMS/Соцсети</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Почтовые шаблоны в фирменном оформлении</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p>Настройка автоматических рассылок (забытая корзина, поздавления, рассылка скидок)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>&mdash;</td>
+								<td>&mdash;</td>
+								<td><img src="img/check-square.svg" alt=""></td>
+							</tr>
+						</tbody>
+
+					</table>
 				</div>
-				<div class="page__examples">
-					<div class="examples__title section__title">Примеры работ</div>
-					<div class="examples__slider swiper-examples">
-						<div class="examples__wrapper swiper-wrapper">
-							<div class="examples__slide swiper-slide">
-								<div class="slide__title"><span>Лионрум</span>
-									— сеть магазинов мебели</div>
-								<div class="slide__tariff">(Тариф Расширенный)</div>
-								<div class="examples__content">
-									<div class="examples__text">
-										<div class="examples__list-title">В рамках проекта было реализовано:</div>
-										<ul class="examples__list">
-											<li class="slide__list-item">Двусторонняя интеграция с МойСклад;</li>
-											<li class="slide__list-item">Редизайн;</li>
-											<li class="slide__list-item">Автоматический расчет стоимости доставки в зависимости от наличия на определенном складе;</li>
-											<li class="slide__list-item">Не типовая механика расчета и вывода персональных скидок.</li>
-										</ul>
-										<p class="slide__description">
-											Не ломая штатную логику решения «Аспро: Максимум», мы реализовали все требования заказчика к новому сайту. Это сохранило модульность решения и позволило сделать все задачи по кастомизации данного решения.
-											После запуска мы продолжили сотрудничество с компанией МебеЛион в формате услуги техподдержки и развития ИМ.
-										</p>
-									</div>
-									<div class="examples__image">
-										<img src="img/examples/example_1.png" alt="">
-									</div>
+			</div>
+			<div class="page__examples page__section page__container">
+				<div class="examples__title section__title">Примеры работ</div>
+				<div class="examples__slider swiper-examples">
+					<div class="examples__wrapper swiper-wrapper">
+						<div class="examples__slide swiper-slide">
+							<div class="slide__title"><span>Лионрум</span>
+								— сеть магазинов мебели</div>
+							<div class="slide__tariff">(Тариф Расширенный)</div>
+							<div class="examples__content">
+								<div class="examples__text">
+									<div class="examples__list-title">В рамках проекта было реализовано:</div>
+									<ul class="examples__list">
+										<li class="slide__list-item">Двусторонняя интеграция с МойСклад;</li>
+										<li class="slide__list-item">Редизайн;</li>
+										<li class="slide__list-item">Автоматический расчет стоимости доставки в зависимости от наличия на определенном складе;</li>
+										<li class="slide__list-item">Не типовая механика расчета и вывода персональных скидок.</li>
+									</ul>
+									<p class="slide__description">
+										Не ломая штатную логику решения «Аспро: Максимум», мы реализовали все требования заказчика к новому сайту. Это сохранило модульность решения и позволило сделать все задачи по кастомизации данного решения.
+										После запуска мы продолжили сотрудничество с компанией МебеЛион в формате услуги техподдержки и развития ИМ.
+									</p>
 								</div>
-							</div>
-							<div class="examples__slide swiper-slide">
-								<div class="slide__title"><span>Bakinity.biz</span>
-									— магазин компьютеров и IT оборудования</div>
-								<div class="slide__tariff">(Тариф Стандартный)</div>
-								<div class="examples__content">
-									<div class="examples__text">
-										<div class="examples__list-title">В рамках проекта было реализовано:</div>
-										<ul class="examples__list">
-											<li class="slide__list-item">Онлайн оплата товаров или услуг;</li>
-											<li class="slide__list-item">Возможность отображать подборки товаров с характеристиками на главной странице (новинки, акции, хиты продаж);</li>
-											<li class="slide__list-item">Возможность отображать товар дня с характеристиками на главной странице;</li>
-											<li class="slide__list-item">Карта с зонированием по стоимости доставки;</li>
-											<li class="slide__list-item">Баннер на главной странице с товаром, который можно положить в корзину, не переходя в карточку товара.</li>
-										</ul>
-									</div>
-									<div class="examples__image">
-										<img src="img/examples/example_2.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="examples__slide swiper-slide">
-								<div class="slide__title"><span>IronHorse</span>
-									— прямой поставщик автомобильных аксессуаров </div>
-								<div class="slide__tariff">(Тариф Базовый)</div>
-								<div class="examples__content">
-									<div class="examples__text">
-										<div class="examples__list-title">В рамках проекта было реализовано:</div>
-										<ul class="examples__list">
-											<li class="slide__list-item">Функционал формирования заказа;</li>
-											<li class="slide__list-item">Каталог товаров;</li>
-											<li class="slide__list-item">Наполнение сайта контентом.</li>
-										</ul>
-										<div class="examples__list-title examples__title-margin-top">Для «IronHorse» мы выделили список работ на следующий этап сотрудничества:</div>
-										<ul class="examples__list">
-											<li class="slide__list-item">Добавить функцию «Оставить отзыв» на странице товара;</li>
-											<li class="slide__list-item">Управлять скидками;</li>
-											<li class="slide__list-item">Установить зависимость цены от зоны доставки;</li>
-											<li class="slide__list-item">Принимать и обрабатывать заказы;</li>
-											<li class="slide__list-item">Подключить онлайн оплату.</li>
-										</ul>
-									</div>
-									<div class="examples__image">
-										<img src="img/examples/example_3.png" alt="">
-									</div>
+								<div class="examples__image">
+									<img src="img/examples/example_1.png" alt="">
 								</div>
 							</div>
 						</div>
-						<button type="button" class="swiper-button-prev"><span></span></button>
-						<button type="button" class="swiper-button-next"><span></span></button>
-					</div>
-				</div>
-				<div class="page__consultation">
-					<div class="consultation__wrapper">
-						<div class="consultation__title section__title">Бесплатная консультация</div>
-						<div class="consultation__form">
-							<form class="form">
-								<div class="form__input">
-									<input type="text" name="" required="">
-									<label>Имя</label>
+						<div class="examples__slide swiper-slide">
+							<div class="slide__title"><span>Bakinity.biz</span>
+								— магазин компьютеров и IT оборудования</div>
+							<div class="slide__tariff">(Тариф Стандартный)</div>
+							<div class="examples__content">
+								<div class="examples__text">
+									<div class="examples__list-title">В рамках проекта было реализовано:</div>
+									<ul class="examples__list">
+										<li class="slide__list-item">Онлайн оплата товаров или услуг;</li>
+										<li class="slide__list-item">Возможность отображать подборки товаров с характеристиками на главной странице (новинки, акции, хиты продаж);</li>
+										<li class="slide__list-item">Возможность отображать товар дня с характеристиками на главной странице;</li>
+										<li class="slide__list-item">Карта с зонированием по стоимости доставки;</li>
+										<li class="slide__list-item">Баннер на главной странице с товаром, который можно положить в корзину, не переходя в карточку товара.</li>
+									</ul>
 								</div>
-								<div class="form__input">
-									<input type="tel" name="" required="">
-									<label>Телефон</label>
+								<div class="examples__image">
+									<img src="img/examples/example_2.png" alt="">
 								</div>
-								<button class="consultation__button main__button">Оставить заявку</button>
-							</form>
+							</div>
 						</div>
+						<div class="examples__slide swiper-slide">
+							<div class="slide__title"><span>IronHorse</span>
+								— прямой поставщик автомобильных аксессуаров </div>
+							<div class="slide__tariff">(Тариф Базовый)</div>
+							<div class="examples__content">
+								<div class="examples__text">
+									<div class="examples__list-title">В рамках проекта было реализовано:</div>
+									<ul class="examples__list">
+										<li class="slide__list-item">Функционал формирования заказа;</li>
+										<li class="slide__list-item">Каталог товаров;</li>
+										<li class="slide__list-item">Наполнение сайта контентом.</li>
+									</ul>
+									<div class="examples__list-title examples__title-margin-top">Для «IronHorse» мы выделили список работ на следующий этап сотрудничества:</div>
+									<ul class="examples__list">
+										<li class="slide__list-item">Добавить функцию «Оставить отзыв» на странице товара;</li>
+										<li class="slide__list-item">Управлять скидками;</li>
+										<li class="slide__list-item">Установить зависимость цены от зоны доставки;</li>
+										<li class="slide__list-item">Принимать и обрабатывать заказы;</li>
+										<li class="slide__list-item">Подключить онлайн оплату.</li>
+									</ul>
+								</div>
+								<div class="examples__image">
+									<img src="img/examples/example_3.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination-examples"></div>
+					<button type="button" class="swiper-button-prev"><span></span></button>
+					<button type="button" class="swiper-button-next"><span></span></button>
+				</div>
+			</div>
+			<div class="page__reviews page__section page__container">
+				<div class="examples__title section__title">Отзывы</div>
+				<div class="reviews__slider swiper-reviews">
+					<div class="reviews__wrapper swiper-wrapper">
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_1.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_2.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_3.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_4.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_5.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_6.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_7.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_8.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_9.png" alt="">
+						</div>
+						<div class="reviews__slide swiper-slide swiper-slide-reviews">
+							<img src="img/reviews/review_10.png" alt="">
+						</div>
+					</div>
+					<div class="swiper-pagination swiper-pagination-about"></div>
+				</div>
+			</div>
+			<div class="page__consultation page__section page__container">
+				<div class="consultation__wrapper">
+					<div class="consultation__title section__title">Бесплатная консультация</div>
+					<div class="consultation__form">
+						<form class="form">
+							<div class="form__input">
+								<input type="text" name="" required="">
+								<label>Имя</label>
+							</div>
+							<div class="form__input">
+								<input id="tel" type="tel" name="" required="">
+								<label>Телефон</label>
+							</div>
+							<button class="consultation__button main__button">Оставить заявку</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -1103,9 +1148,6 @@
 	</div>
 
 
-	<footer class="footer">
-
-	</footer>
 	</div>
 	<!-- <div id="popup_2" aria-hidden="true" class="popup ">
 	<div class="popup__wrapper">
@@ -1140,9 +1182,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230307114905"></script>
-	<!-- <script src=" js/files/script.js?_v=20230307114905"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230307114905">
+	<script src="js/app.min.js?_v=20230309104327"></script>
+	<!-- <script src=" js/files/script.js?_v=20230309104327"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230309104327">
 
 	</script>
 </body>

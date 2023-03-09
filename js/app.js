@@ -7,7 +7,7 @@
             }), 0);
         }));
     }
-    function functions_getHash() {
+    function getHash() {
         if (location.hash) return location.hash.replace("#", "");
     }
     function setHash(hash) {
@@ -122,7 +122,7 @@
         const tabs = document.querySelectorAll("[data-tabs]");
         let tabsActiveHash = [];
         if (tabs.length > 0) {
-            const hash = functions_getHash();
+            const hash = getHash();
             if (hash && hash.startsWith("tab-")) tabsActiveHash = hash.replace("tab-", "").split("-");
             tabs.forEach(((tabsBlock, index) => {
                 tabsBlock.classList.add("_tab-init");
@@ -223,6 +223,15 @@
             }
         }));
     }
+    function menuClose() {
+        bodyUnlock();
+        document.documentElement.classList.remove("menu-open");
+    }
+    function functions_FLS(message) {
+        setTimeout((() => {
+            if (window.FLS) ;
+        }), 0);
+    }
     function uniqArray(array) {
         return array.filter((function(item, index, self) {
             return self.indexOf(item) === index;
@@ -266,7 +275,74 @@
             }
         }
     }
+    let gotoblock_gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
+        const targetBlockElement = document.querySelector(targetBlock);
+        if (targetBlockElement) {
+            let headerItem = "";
+            let headerItemHeight = 0;
+            if (noHeader) {
+                headerItem = "header.header";
+                headerItemHeight = document.querySelector(headerItem).offsetHeight;
+            }
+            let options = {
+                speedAsDuration: true,
+                speed,
+                header: headerItem,
+                offset: offsetTop,
+                easing: "easeOutQuad"
+            };
+            document.documentElement.classList.contains("menu-open") ? menuClose() : null;
+            if ("undefined" !== typeof SmoothScroll) (new SmoothScroll).animateScroll(targetBlockElement, "", options); else {
+                let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
+                targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
+                targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
+                window.scrollTo({
+                    top: targetBlockElementPosition,
+                    behavior: "smooth"
+                });
+            }
+            functions_FLS(`[gotoBlock]: Юхуу...едем к ${targetBlock}`);
+        } else functions_FLS(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${targetBlock}`);
+    };
     let addWindowScrollEvent = false;
+    function pageNavigation() {
+        document.addEventListener("click", pageNavigationAction);
+        document.addEventListener("watcherCallback", pageNavigationAction);
+        function pageNavigationAction(e) {
+            if ("click" === e.type) {
+                const targetElement = e.target;
+                if (targetElement.closest("[data-goto]")) {
+                    const gotoLink = targetElement.closest("[data-goto]");
+                    const gotoLinkSelector = gotoLink.dataset.goto ? gotoLink.dataset.goto : "";
+                    const noHeader = gotoLink.hasAttribute("data-goto-header") ? true : false;
+                    const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
+                    const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
+                    gotoblock_gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
+                    e.preventDefault();
+                }
+            } else if ("watcherCallback" === e.type && e.detail) {
+                const entry = e.detail.entry;
+                const targetElement = entry.target;
+                if ("navigator" === targetElement.dataset.watch) {
+                    document.querySelector(`[data-goto]._navigator-active`);
+                    let navigatorCurrentItem;
+                    if (targetElement.id && document.querySelector(`[data-goto="#${targetElement.id}"]`)) navigatorCurrentItem = document.querySelector(`[data-goto="#${targetElement.id}"]`); else if (targetElement.classList.length) for (let index = 0; index < targetElement.classList.length; index++) {
+                        const element = targetElement.classList[index];
+                        if (document.querySelector(`[data-goto=".${element}"]`)) {
+                            navigatorCurrentItem = document.querySelector(`[data-goto=".${element}"]`);
+                            break;
+                        }
+                    }
+                    if (entry.isIntersecting) navigatorCurrentItem ? navigatorCurrentItem.classList.add("_navigator-active") : null; else navigatorCurrentItem ? navigatorCurrentItem.classList.remove("_navigator-active") : null;
+                }
+            }
+        }
+        if (getHash()) {
+            let goToHash;
+            if (document.querySelector(`#${getHash()}`)) goToHash = `#${getHash()}`; else if (document.querySelector(`.${getHash()}`)) goToHash = `.${getHash()}`;
+            goToHash ? gotoblock_gotoBlock(goToHash, true, 500, 20) : null;
+        }
+    }
     setTimeout((() => {
         if (addWindowScrollEvent) {
             let windowScroll = new Event("windowScroll");
@@ -342,13 +418,51 @@
             spaceBetween: 24,
             speed: 1e3,
             loop: false,
-            watchOverflow: false,
+            watchOverflow: true,
             preloadImages: false,
             parallax: true,
             pagination: true,
+            pagination: {
+                el: ".swiper-pagination-examples",
+                clickable: true
+            },
             navigation: {
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
+            },
+            breakpoints: {
+                320: {
+                    spaceBetween: 20
+                },
+                530: {
+                    spaceBetween: 20
+                },
+                992: {
+                    spaceBetween: 20
+                },
+                1268: {
+                    spaceBetween: 24
+                },
+                1550: {
+                    spaceBetween: 24
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".swiper-reviews")) new Swiper(".swiper-reviews", {
+            observer: true,
+            observeParents: true,
+            slidesPerView: "auto",
+            spaceBetween: 24,
+            speed: 1e3,
+            loop: false,
+            watchOverflow: true,
+            preloadImages: false,
+            parallax: true,
+            pagination: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
             },
             breakpoints: {
                 320: {
@@ -373,8 +487,37 @@
     window.addEventListener("load", (function(e) {
         initSliders();
     }));
+    window.addEventListener("DOMContentLoaded", (function() {
+        [].forEach.call(document.querySelectorAll("#tel"), (function(input) {
+            var keyCode;
+            function mask(event) {
+                event.keyCode && (keyCode = event.keyCode);
+                var pos = this.selectionStart;
+                if (pos < 3) event.preventDefault();
+                var matrix = "+7 (___) ___ ____", i = 0, def = matrix.replace(/\D/g, ""), val = this.value.replace(/\D/g, ""), new_value = matrix.replace(/[_\d]/g, (function(a) {
+                    return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+                }));
+                i = new_value.indexOf("_");
+                if (-1 != i) {
+                    i < 5 && (i = 3);
+                    new_value = new_value.slice(0, i);
+                }
+                var reg = matrix.substr(0, this.value.length).replace(/_+/g, (function(a) {
+                    return "\\d{1," + a.length + "}";
+                })).replace(/[+()]/g, "\\$&");
+                reg = new RegExp("^" + reg + "$");
+                if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+                if ("blur" == event.type && this.value.length < 5) this.value = "";
+            }
+            input.addEventListener("input", mask, false);
+            input.addEventListener("focus", mask, false);
+            input.addEventListener("blur", mask, false);
+            input.addEventListener("keydown", mask, false);
+        }));
+    }));
     window["FLS"] = false;
     addLoadedClass();
     menuInit();
     tabs();
+    pageNavigation();
 })();
