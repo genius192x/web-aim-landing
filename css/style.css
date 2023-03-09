@@ -259,6 +259,25 @@ body::after {
   pointer-events: none;
 }
 
+.popup__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+  text-align: center;
+  color: #3e3e3e;
+}
+
+.popup__items {
+  max-width: 500px;
+}
+
+.popup__button {
+  margin-top: 32px;
+  padding: 16px 0px;
+  width: 100%;
+}
+
 .popup_show {
   z-index: 150;
   visibility: visible;
@@ -306,6 +325,12 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   visibility: hidden;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -317,44 +342,48 @@ body::after {
   transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   padding: 20px;
   width: 100%;
-  width: 540px;
-  height: 455px;
-  background: #282828;
-  border-radius: 20px;
+  min-height: 600px;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 4px;
 }
 
-@supports (width: clamp( 18.125rem , 12.6425438596rem  +  27.4122807018vw , 33.75rem )) {
-  .popup__content {
-    width: clamp( 18.125rem , 12.6425438596rem  +  27.4122807018vw , 33.75rem );
-  }
+.popup__content form {
+  width: 100%;
+  max-width: none;
 }
 
-@supports not (width: clamp( 18.125rem , 12.6425438596rem  +  27.4122807018vw , 33.75rem )) {
-  .popup__content {
-    width: calc(18.125rem + 15.625 * (100vw - 20rem) / 57);
-  }
-}
-
-@supports (height: clamp( 28.75rem , 37.1929824561rem  +  -10.9649122807vw , 35rem )) {
-  .popup__content {
-    height: clamp( 28.75rem , 37.1929824561rem  +  -10.9649122807vw , 35rem );
-  }
-}
-
-@supports not (height: clamp( 28.75rem , 37.1929824561rem  +  -10.9649122807vw , 35rem )) {
-  .popup__content {
-    height: calc(35rem + -6.25 * (100vw - 20rem) / 57);
-  }
+.popup__content form .form__input {
+  max-width: 400px;
 }
 
 .lock .popup__content {
   visibility: visible;
 }
 
+.callback__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.callback__content img {
+  max-width: 200px;
+}
+
 .close__popup {
+  position: absolute;
+  top: 34px;
+  right: 34px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  position: relative;
   min-height: 22px;
   width: 22px;
   cursor: pointer;
@@ -665,6 +694,10 @@ body::after {
   font-size: 23px;
 }
 
+.header__phone-icon {
+  width: 35px;
+}
+
 .icon-menu {
   display: none;
 }
@@ -690,6 +723,17 @@ main {
 
 .page__section {
   margin-top: 160px;
+}
+
+.page .banner__background {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  right: 0;
+  min-height: 80vh;
 }
 
 .page__banner {
@@ -1145,6 +1189,10 @@ main {
   border-bottom: 1px solid #d9d9d9;
 }
 
+.table td span {
+  color: #ff7600;
+}
+
 .table__price {
   font-weight: 500;
   font-size: 30px;
@@ -1358,6 +1406,7 @@ main {
 }
 
 .main__button {
+  text-align: center;
   white-space: nowrap;
   display: inline-block;
   border-radius: 40px;
@@ -1366,6 +1415,10 @@ main {
   font-size: 16px;
   font-weight: bold;
   z-index: 10;
+}
+
+.table__gift {
+  max-width: 20px;
 }
 
 @media (min-width: 47.99875em) {
@@ -1483,8 +1536,9 @@ main {
     font-size: 50px;
   }
 
-  .page__banner .banner__background img {
+  .page .banner__background img {
     max-width: 100%;
+    min-height: 80vh;
   }
 }
 
@@ -1546,6 +1600,7 @@ main {
   .tabs__title {
     font-size: 24px;
     top: 100px;
+    left: 20px;
   }
 
   .tabs__content {
@@ -1586,13 +1641,13 @@ main {
     position: relative;
     width: 34px;
     height: 20px;
-    z-index: 4;
     -webkit-transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     -o-transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    z-index: 400;
   }
 
   .icon-menu::before,
@@ -1623,7 +1678,6 @@ main {
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
             transform: rotate(90deg);
-    z-index: 400;
   }
 
   .menu-open .icon-menu::before {
@@ -1769,9 +1823,20 @@ main {
     padding: 0 1rem;
   }
 
+  .popup {
+    padding: 0;
+  }
+
+  .popup__content {
+    height: 100%;
+    border-radius: 0px;
+    min-height: 100vh;
+  }
+
   .tabs__title {
     font-size: 20px;
     top: 70px;
+    left: 15px;
   }
 
   .tabs__columns {
@@ -1823,7 +1888,7 @@ main {
     padding-top: 26px;
   }
 
-  .phone-number {
+  .header__phone {
     display: none;
   }
 
@@ -1831,22 +1896,21 @@ main {
     margin-top: 80px;
   }
 
-  .page__banner {
+  .page {
     min-height: 80vh;
   }
 
-  .page__banner .banner__background {
+  .page .banner__background {
     position: absolute;
     top: 50%;
     z-index: -1;
-    -webkit-transform: translate(15%, -50%);
-        -ms-transform: translate(15%, -50%);
-            transform: translate(15%, -50%);
+    -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
     right: 0;
-    width: 60%;
   }
 
-  .page__banner .banner__background img {
+  .page .banner__background img {
     width: 100%;
   }
 
@@ -1995,15 +2059,14 @@ main {
     font-size: 25px;
   }
 
-  .page__banner .banner__background {
+  .page .banner__background {
     position: absolute;
     top: 50%;
     z-index: -1;
-    -webkit-transform: translate(15%, -50%);
-        -ms-transform: translate(15%, -50%);
-            transform: translate(15%, -50%);
+    -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
     right: 0;
-    width: 80%;
   }
 
   .tariffs__subtitle {

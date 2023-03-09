@@ -5,8 +5,8 @@
 	<title>Title</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230309104327" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230309104327">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230309130232" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309130232">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -25,6 +25,9 @@
 							<li class="menu__item text__font-weight_medium"><a href="#" data-goto=".page__reviews" class="menu__link">Отзывы</a></li>
 						</ul>
 					</div>
+					<a href="tel:88002010768" class="header__phone-icon">
+						<img src="img/icons8-phone.svg" alt="">
+					</a>
 					<div class="header__logo"><img src="img/LOGO.svg" alt=""></div>
 					<nav class="menu__body">
 						<ul class="menu__list">
@@ -40,18 +43,19 @@
 			</div>
 		</header>
 		<main class="page">
+			<picture class="banner__background">
+				<source srcset="img/LOGO-MOBILE.svg" media="(max-width: 1200px)" />
+				<img src="img/LOGO.png" alt="WEB-AiM" />
+			</picture>
 			<div class="page__banner page__container ">
 				<div class="banner__content">
 					<div class="banner__title">
 						<h1 class="banner__title title__main">Создадим <br> интернет-магазин для решения <br> бизнес задач
 						</h1>
 					</div>
-					<a href="" class="banner__button main__button">Бесплатная консультация</a>
+					<a href="#" data-popup="#popup" class="banner__button main__button">Бесплатная консультация</a>
 				</div>
-				<picture class="banner__background">
-					<source srcset="img/LOGO-MOBILE.svg" media="(max-width: 800px)" />
-					<img src="img/LOGO.png" alt="WEB-AiM" />
-				</picture>
+
 				<div class="banner__arrow">
 					<img src="img/arrow.svg" alt="">
 				</div>
@@ -128,7 +132,7 @@
 								<input id="tel" type="tel" name="" required="">
 								<label>Телефон</label>
 							</div>
-							<button class="consultation__button main__button">Оставить заявку</button>
+							<button data-popup="#finish" class="consultation__button main__button">Оставить заявку</button>
 						</form>
 					</div>
 				</div>
@@ -279,7 +283,7 @@
 									<div class="tabs__description">
 										<p>«Перед тем как подобрать конкретное техническое решение важно понимать какую задачу решаем прямо сейчас, как устроен бизнес, какие механики в работе с клиентами используют, количество товаров и откуда товары попадают на сайт, сколько складов и как работает доставка, как формируются цены для разных типов клиентов и какие типы оплат требуются.
 											Это только небольшой список вопросов, на который мы отвечаем вместе с клиентами, чтобы разобраться, какой фундамент нужно заложить, что делать прямо сейчас, что может дождаться своей очереди». </p>
-										<a class="tabs__button main__button">Бесплатная консультация </a>
+										<a href="#" data-popup="#popup" class="tabs__button main__button">Бесплатная консультация </a>
 									</div>
 								</div>
 							</div>
@@ -331,7 +335,7 @@
 											Система расширяема, мы всегда можем запустить простой интернет-магазин и постепенно его развивать. Для многих бизнесов не нужно сразу запускать большой и сложный сайт, разумно начать с малого и когда бизнес заработает и начнет приносить прибыль уже усложнять и улучшать.
 											Мы имеем большое сообщество разработчиков, это помогает делится знаниями и развивать систему дальше. 
 											Немаловажно и что Битрикс частная компания, которая постоянно развивается и развивает свой продукт».</p>
-										<a class="tabs__button main__button">Бесплатная консультация </a>
+										<a href="#" data-popup="#popup" class="tabs__button main__button">Бесплатная консультация </a>
 									</div>
 								</div>
 							</div>
@@ -373,7 +377,7 @@
 										<p>«Мы понимаем и продвигаем идею, что сайт, не законченный и монолитный продукт, а живой и развивающийся вместе с бизнесом инструмент, который должен иметь все возможности для трансформации и адаптации под меняющиеся условия и реалии бизнеса. 
 											У каждого этапа есть своё время. При первом запуске многие функции не нужны и на них можно сэкономить.
 											Понимая весь путь мы не боимся, что придётся переделывать всё с самого начала при подключении какой-то новой функции».</p>
-										<a class="tabs__button main__button">Бесплатная консультация </a>
+										<a href="#" data-popup="#popup" class="tabs__button main__button">Бесплатная консультация </a>
 									</div>
 								</div>
 							</div>
@@ -413,7 +417,7 @@
 									</div>
 									<div class="tabs__description">
 										<p>«Мы добиваемся максимальной прозрачности для наших клиентов как по стоимости и срокам, так и по ходу работ – наши клиенты всегда в курсе того, что именно и зачем происходит на их проекте. Все задачи ставятся по SMART и всегда доступны на нашем рабочем портале.Мы одинаково хорошо работаем как по гибкой модели управления (Agile), так и успешно справляемся с проектами, к в которых заказчику принциально использовать каскадную модель (Whatefall)».</p>
-										<a class="tabs__button main__button">Бесплатная консультация </a>
+										<a href="#" data-popup="#popup" class="tabs__button main__button">Бесплатная консультация </a>
 									</div>
 								</div>
 							</div>
@@ -452,7 +456,7 @@
 									</div>
 									<div class="tabs__description">
 										<p>«На регулярных встречах с заказчиком, каждый месяц выстраивается месячный план работ по проекту, который может включать как те работы, которые приходят от заказчика, так и те работы, которые предложены нашими специалистами на базе аналитики, трендов, маркетинговой стратегии и тд».</p>
-										<a class="tabs__button main__button">Бесплатная консультация </a>
+										<a href="#" data-popup="#popup" class="tabs__button main__button">Бесплатная консультация </a>
 									</div>
 								</div>
 							</div>
@@ -491,15 +495,15 @@
 							<tfoot>
 								<tr>
 									<th>&nbsp;</th>
-									<td><a class="table__link" href="#">Хочу</a></td>
-									<td><a class="table__link" href="#">Хочу</a></td>
-									<td><a class="table__link" href="#">Хочу</a></td>
+									<td><a class="table__link" href="#" data-popup="#popup">Хочу</a></td>
+									<td><a class="table__link" href="#" data-popup="#popup">Хочу</a></td>
+									<td><a class="table__link" href="#" data-popup="#popup">Хочу</a></td>
 								</tr>
 							</tfoot>
 							<tbody>
 								<tr>
 									<td class="table__title title__bold">
-										<p>ПОДАРОК!!! Аренда выделенного сервера на 6 мес + SSL сертификат сроком на 1 год</p>
+										<p> <img class="table__gift" src="img/icons8-gift.gif" alt=""> <span>ПОДАРОК!!!</span> Аренда выделенного сервера на 6 мес + SSL сертификат сроком на 1 год</p>
 									</td>
 									<td><img src="img/check-square.svg" alt=""></td>
 									<td><img src="img/check-square.svg" alt=""></td>
@@ -738,15 +742,15 @@
 						</thead>
 						<tfoot>
 							<tr>
-								<td><a class="table__link" href="#">Хочу</a></td>
-								<td><a class="table__link" href="#">Хочу</a></td>
-								<td><a class="table__link" href="#">Хочу</a></td>
+								<td><a href="#" data-popup="#popup" class="table__link">Хочу</a></td>
+								<td><a href="#" data-popup="#popup" class="table__link">Хочу</a></td>
+								<td><a href="#" data-popup="#popup" class="table__link">Хочу</a></td>
 							</tr>
 						</tfoot>
 						<tbody>
 							<tr>
 								<td colspan="3">
-									<p>ПОДАРОК!!! Аренда выделенного сервера на 6 мес + SSL сертификат сроком на 1 год</p>
+									<p><img class="table__gift" src="img/icons8-gift.gif" alt=""><span>ПОДАРОК!!!</span> Аренда выделенного сервера на 6 мес + SSL сертификат сроком на 1 год</p>
 								</td>
 							</tr>
 							<tr>
@@ -1139,7 +1143,7 @@
 								<input id="tel" type="tel" name="" required="">
 								<label>Телефон</label>
 							</div>
-							<button class="consultation__button main__button">Оставить заявку</button>
+							<button data-popup="#finish" class="consultation__button main__button">Оставить заявку</button>
 						</form>
 					</div>
 				</div>
@@ -1149,42 +1153,48 @@
 
 
 	</div>
-	<!-- <div id="popup_2" aria-hidden="true" class="popup ">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<div class="decoration__background">
-				<div class="red__elipse"></div>
-				<div class="green__elipse"></div>
-			</div>
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div data-close class="close__popup"></div>
-			<div class="popup__items">
-				<div class="callback__content">
-					<h2 class="form__title">Заказать звонок</h2>
-					<h2 class="form__subtitle">Впишите свои данные, и мы свяжемся с Вами. Ваши данные ни при каких
-						обстоятельствах не будут переданы третьим лицам.</h2>
-					<form action="index.html" class="form">
+	<div id="popup" aria-hidden="true" class="popup ">
+		<div class="popup__wrapper">
+			<div class="popup__content">
 
-
-						<div class="form__item">
-							<label for="formName" class="form__label">Ваше имя*:</label>
-							<input id="formName" type="text" name="name" class="form__input _req">
-						</div>
-						<div class="form__item">
-							<label for="formTel" class="form__label">Ваш номер телефона*:</label>
-							<input id="formTel" type="text" name="Tel" class="form__input _req">
-						</div>
-
-						<input type="submit" class="send" value="Отправить">
-					</form>
+				<div data-close class="close__popup"></div>
+				<div class="popup__items">
+					<div class="callback__content">
+						<h2 class="popup__title">Бесплатная консультация</h2>
+						<form class="form">
+							<div class="form__input">
+								<input type="text" name="" required="">
+								<label>Имя</label>
+							</div>
+							<div class="form__input">
+								<input id="tel" type="tel" name="" required="">
+								<label>Телефон</label>
+							</div>
+							<a href="#" data-popup="#finish" class="consultation__button main__button">Оставить заявку</a>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230309104327"></script>
-	<!-- <script src=" js/files/script.js?_v=20230309104327"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230309104327">
+	<div id="finish" aria-hidden="true" class="popup ">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div data-close class="close__popup"></div>
+				<div class="popup__items">
+					<div class="callback__content">
+						<img src="img/about/icon_2.svg" alt="">
+						<h2 class="popup__title">Ваша заявка отправлена</h2>
+						<button data-close class="main__button popup__button">Отлично</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230309130232"></script>
+	<!-- <script src=" js/files/script.js?_v=20230309130232"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230309130232">
 
 	</script>
 </body>
