@@ -1901,6 +1901,10 @@
     } ]).addField("#basic_phone", [ {
         rule: "required",
         errorMessage: "Введите корректный номер"
+    }, {
+        rule: "minLength",
+        value: 17,
+        errorMessage: "Введите корректный номер"
     } ]).onSuccess((event => {
         modules_flsModules.popup.open("#finish");
         event.preventDefault();
@@ -1921,6 +1925,10 @@
     } ]).addField("#basic_phone", [ {
         rule: "required",
         errorMessage: "Введите корректный номер"
+    }, {
+        rule: "minLength",
+        value: 17,
+        errorMessage: "Введите корректный номер"
     } ]).onSuccess((event => {
         modules_flsModules.popup.open("#finish");
         event.preventDefault();
@@ -1940,6 +1948,10 @@
         errorMessage: "Введите имя должно содержать не более 30 букв"
     } ]).addField("#basic_phone", [ {
         rule: "required",
+        errorMessage: "Введите корректный номер"
+    }, {
+        rule: "minLength",
+        value: 17,
         errorMessage: "Введите корректный номер"
     } ]).onSuccess((event => {
         modules_flsModules.popup.open("#finish");
