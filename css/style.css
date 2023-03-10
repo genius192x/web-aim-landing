@@ -693,6 +693,26 @@ body::after {
   gap: 80px;
 }
 
+.menu__item {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu__item:hover {
+  color: #ff7600;
+}
+
+.phone-number {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.phone-number:hover {
+  color: #ff7600;
+}
+
 .text__font-weight_medium {
   font-weight: medium;
   font-size: 23px;
@@ -1229,6 +1249,35 @@ main {
   padding: 12px 54px;
   border-radius: 40px;
   position: relative;
+  overflow: hidden;
+}
+
+.table__link:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: border-radius 0.5s, width 0.5s, height 0.5s ease 0s;
+  -o-transition: border-radius 0.5s, width 0.5s, height 0.5s ease 0s;
+  transition: border-radius 0.5s, width 0.5s, height 0.5s ease 0s;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  border-radius: 20px;
+  height: 0;
+  background: #ff7600;
+}
+
+.table__link:hover {
+  color: white;
+}
+
+.table__link:hover::before {
+  border-radius: 0px;
+  width: 105%;
+  height: 105%;
 }
 
 .prices__wrapper-desktop {
@@ -1424,6 +1473,31 @@ main {
   font-size: 16px;
   font-weight: bold;
   z-index: 10;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: border-radius 0.5s, width 0.5s, height 0.5s ease 0s;
+  -o-transition: border-radius 0.5s, width 0.5s, height 0.5s ease 0s;
+  transition: border-radius 0.5s, width 0.5s, height 0.5s ease 0s;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  border-radius: 50%;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main__button:hover::before {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 .table__gift {
