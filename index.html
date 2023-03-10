@@ -5,8 +5,8 @@
 	<title>Title</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230309152420" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230309152420">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230310131032" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230310131032">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -123,16 +123,17 @@
 				<div class="consultation__wrapper">
 					<div class="consultation__title section__title">Бесплатная консультация</div>
 					<div class="consultation__form">
-						<form class="form">
+						<form id="form" class="form">
 							<div class="form__input">
-								<input type="text" name="" required="">
+								<input autocomplete="off" id="basic_name" type="text" name="" required="">
 								<label>Имя</label>
 							</div>
 							<div class="form__input">
-								<input id="tel" type="tel" name="" required="">
+								<input autocomplete="off" id="basic_phone" id="tel" type="tel" name="" required="">
 								<label>Телефон</label>
 							</div>
-							<button data-popup="#finish" class="consultation__button main__button">Оставить заявку</button>
+							<button class="consultation__button main__button" type="submit">Оставить заявку</button>
+
 						</form>
 					</div>
 				</div>
@@ -1137,16 +1138,16 @@
 				<div class="consultation__wrapper">
 					<div class="consultation__title section__title">Бесплатная консультация</div>
 					<div class="consultation__form">
-						<form class="form">
+						<form id="form_1" class="form">
 							<div class="form__input">
-								<input type="text" name="" required="">
+								<input autocomplete="off" id="basic_name" type="text" name="" required="">
 								<label>Имя</label>
 							</div>
 							<div class="form__input">
-								<input id="tel" type="tel" name="" required="">
+								<input autocomplete="off" id="basic_phone" type="tel" name="" required="">
 								<label>Телефон</label>
 							</div>
-							<button data-popup="#finish" class="consultation__button main__button">Оставить заявку</button>
+							<button class="consultation__button main__button" type="submit">Оставить заявку</button>
 						</form>
 					</div>
 				</div>
@@ -1164,16 +1165,16 @@
 				<div class="popup__items">
 					<div class="callback__content">
 						<h2 class="popup__title">Бесплатная консультация</h2>
-						<form class="form">
+						<form id="form-popup" class="form">
 							<div class="form__input">
-								<input type="text" name="" required="">
+								<input autocomplete="off" id="basic_name" type="text" name="" required="">
 								<label>Имя</label>
 							</div>
 							<div class="form__input">
-								<input id="tel" type="tel" name="" required="">
+								<input autocomplete="off" id="basic_phone" id="tel" type="tel" name="" required="">
 								<label>Телефон</label>
 							</div>
-							<a href="#" data-popup="#finish" class="consultation__button main__button">Оставить заявку</a>
+							<button class="consultation__button main__button" type="submit">Оставить заявку</button>
 						</form>
 					</div>
 				</div>
@@ -1195,11 +1196,11 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230309152420"></script>
-	<!-- <script src=" js/files/script.js?_v=20230309152420"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230309152420">
+	<script src="js/app.min.js?_v=20230310131032"></script>
+	<!-- <script src=" js/files/script.js?_v=20230310131032"></script> -->
+	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js?_v=20230310131032"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230310131032"></script>
 
-	</script>
 </body>
 
 </html>
