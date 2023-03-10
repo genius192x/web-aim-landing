@@ -1899,6 +1899,10 @@
         value: 30,
         errorMessage: "Введите имя должно содержать не более 30 букв"
     } ]).addField("#basic_phone", [ {
+        rule: "customRegexp",
+        value: /^((8|\+[0-9])[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,15}$/,
+        errorMessage: "Неверное значение"
+    }, {
         rule: "required",
         errorMessage: "Введите корректный номер"
     }, {
