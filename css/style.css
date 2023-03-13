@@ -541,7 +541,7 @@ body::after {
   color: #3e3e3e;
 }
 
-.title__bold {
+tbody .title__bold {
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
