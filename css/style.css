@@ -1090,7 +1090,8 @@ main {
   width: 100%;
 }
 
-.form__input input {
+.form__input .name,
+.form__input .phone {
   width: 100%;
   font-size: 16px;
   color: #3e3e3e;
@@ -1103,22 +1104,71 @@ main {
   transition: all 0.3s ease 0s;
 }
 
-.form__input input:focus {
+.form__input .name:focus,
+.form__input .phone:focus {
   border-bottom: 1px solid #ff7600;
 }
 
-.form__input input:focus ~ label {
+.form__input .name:focus ~ label,
+.form__input .phone:focus ~ label {
   top: -20px;
   left: 0;
   color: #3e3e3e;
   font-size: 12px;
 }
 
-.form__input input:valid {
+.form__input .name:valid,
+.form__input .phone:valid {
   border-bottom: 1px solid #ff7600;
 }
 
-.form__input input:valid ~ label {
+.form__input .name:valid ~ label,
+.form__input .phone:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #3e3e3e;
+  font-size: 12px;
+}
+
+.form__input .email {
+  width: 100%;
+  font-size: 16px;
+  color: #3e3e3e;
+  border: none;
+  border-bottom: 1px solid #3e3e3e;
+  outline: none;
+  background: transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form__input .email:focus {
+  border-bottom: 1px solid #ff7600;
+}
+
+.form__input .email:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #3e3e3e;
+  font-size: 12px;
+}
+
+.form__input .email:not(:-moz-placeholder-shown) ~ label {
+  top: -20px;
+  left: 0;
+  color: #3e3e3e;
+  font-size: 12px;
+}
+
+.form__input .email:not(:-ms-input-placeholder) ~ label {
+  top: -20px;
+  left: 0;
+  color: #3e3e3e;
+  font-size: 12px;
+}
+
+.form__input .email:not(:placeholder-shown) ~ label {
   top: -20px;
   left: 0;
   color: #3e3e3e;
@@ -1126,69 +1176,6 @@ main {
 }
 
 .form__input label {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  font-size: 14px;
-  color: #3e3e3e;
-  pointer-events: none;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.form__input_is-required_false {
-  position: relative;
-  min-height: 40px;
-  width: 100%;
-}
-
-.form__input_is-required_false input {
-  width: 100%;
-  font-size: 16px;
-  color: #3e3e3e;
-  border: none;
-  border-bottom: 1px solid #3e3e3e;
-  outline: none;
-  background: transparent;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.form__input_is-required_false input:focus {
-  border-bottom: 1px solid #ff7600;
-}
-
-.form__input_is-required_false input:focus ~ label {
-  top: -20px;
-  left: 0;
-  color: #3e3e3e;
-  font-size: 12px;
-}
-
-.form__input_is-required_false input:not(:-moz-placeholder-shown) ~ label {
-  top: -20px;
-  left: 0;
-  color: #3e3e3e;
-  font-size: 12px;
-}
-
-.form__input_is-required_false input:not(:-ms-input-placeholder) ~ label {
-  top: -20px;
-  left: 0;
-  color: #3e3e3e;
-  font-size: 12px;
-}
-
-.form__input_is-required_false input:not(:placeholder-shown) ~ label {
-  top: -20px;
-  left: 0;
-  color: #3e3e3e;
-  font-size: 12px;
-}
-
-.form__input_is-required_false label {
   position: absolute;
   top: 0;
   left: 10px;
