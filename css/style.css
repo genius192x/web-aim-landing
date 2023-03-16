@@ -575,12 +575,12 @@ tbody .title__bold {
 
 .button__installment {
   padding: 15px 20px;
-  border: 2px solid red;
+  border: 2px solid #ff7600;
   border-radius: 40px;
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
-  color: red;
+  color: #ff7600;
   white-space: nowrap;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -588,14 +588,15 @@ tbody .title__bold {
 }
 
 .button__installment:hover {
-  background: red;
+  background: #ff7600;
   color: white;
 }
 
 .installment__text {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
-  color: red;
+  line-height: 1.5;
+  color: #ff7600;
 }
 
 @-webkit-keyframes move {
