@@ -165,6 +165,15 @@ body::after {
   color: #3e3e3e;
 }
 
+.popup__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 15px;
+  max-width: 372px;
+}
+
 .popup__items {
   max-width: 500px;
 }

@@ -352,7 +352,6 @@
         }
         eventsPopup() {
             document.addEventListener("click", function(e) {
-                console.log("click");
                 const buttonOpen = e.target.closest(`[${this.options.attributeOpenButton}]`);
                 if (buttonOpen) {
                     e.preventDefault();
@@ -1722,6 +1721,28 @@
             return this;
         }
     }
+    var MouseCoords = {
+        getX: function(e) {
+            if (e.pageX) return e.pageX; else if (e.clientX) return e.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft) - document.documentElement.clientLeft;
+            return 0;
+        },
+        getY: function(e) {
+            if (e.pageY) return e.pageY; else if (e.clientY) return e.clientY + (document.documentElement.scrollTop || document.body.scrollTop) - document.documentElement.clientTop;
+            return 0;
+        }
+    };
+    document.onmousemove = function(e) {
+        let value = sessionStorage.getItem("test");
+        if (1 != value) {
+            if (!e) e = window.event;
+            MouseCoords.getX(e);
+            let coordY = MouseCoords.getY(e);
+            if (coordY <= 3) {
+                sessionStorage.setItem("test", 1);
+                modules_flsModules.popup.open("#last-chance");
+            }
+        }
+    };
     const animItems = document.querySelectorAll(".animation-item");
     if (animItems.length > 0) {
         window.addEventListener("scroll", animOnScroll);
@@ -1910,6 +1931,7 @@
         value: 17,
         errorMessage: "Введите корректный номер"
     } ]).onSuccess((event => {
+        sessionStorage.setItem("test", 1);
         modules_flsModules.popup.open("#finish");
         event.preventDefault();
         console.log("good");
@@ -1934,6 +1956,7 @@
         value: 17,
         errorMessage: "Введите корректный номер"
     } ]).onSuccess((event => {
+        sessionStorage.setItem("test", 1);
         modules_flsModules.popup.open("#finish");
         event.preventDefault();
         console.log("good");
@@ -1958,6 +1981,7 @@
         value: 17,
         errorMessage: "Введите корректный номер"
     } ]).onSuccess((event => {
+        sessionStorage.setItem("test", 1);
         modules_flsModules.popup.open("#finish");
         event.preventDefault();
         console.log("good");
